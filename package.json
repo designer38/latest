@@ -1,0 +1,23 @@
+{
+  "name": "myproject",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gulp": "gulp"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "gulp": "^3.9.1",
+    "jquery": "^3.3.1",
+    "wowjs": "^1.1.3"
+  },
+  "devDependencies": {
+    "gulp-bootstrap-configurator": "^0.4.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^3.2.1"
+  },
+  "description": ""
+}

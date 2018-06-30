@@ -1,0 +1,98 @@
+
+.bgcover{
+  background-image: url("3dbglastب.svg");
+  background-repeat: no-repeat;
+
+     background-position:right bottom;
+
+}
+
+.abouttext{
+  padding-top: 100px;
+}
+
+
+.aboutsvg{
+  -webkit-perspective: 1000px;
+            perspective: 1000px;
+	margin: 2em;
+    transform-style: preserve-3d;
+}
+.svgani{
+
+  height: 400px;
+  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 4s;
+    animation-delay: -2s;
+    animation-iteration-count: infinite;
+  }
+
+  @-webkit-keyframes example {
+    0%   { left:200px; top:0px;}
+
+    100% { left:0px; top:50px;}
+}
+
+
+
+
+.area {
+  text-align: center;
+  font-size: 6.5em;
+  color: $primary;
+  letter-spacing: -7px;
+  font-weight: 700;
+  text-transform: uppercase;
+  animation: blur .75s ease-out infinite;
+  text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+height: 100px;
+width: 100px;
+background-size: 100%, 100%;
+border-radius: 50%;
+box-shadow: 0 8px 16px 0 $primary, 0 6px 20px 0 $primary;
+background-color: white;
+}
+h3{
+  @extend %h3s;
+}
+
+.carousel-control-next-icon:after
+{
+content: '>';
+font-size: 55px;
+color: $primary;
+}
+
+.carousel-control-prev-icon:after {
+content: '<';
+font-size: 55px;
+color: $primary;
+}
+
+@keyframes blur {
+  from {
+    text-shadow:0px 0px 10px $warning,
+      0px 0px 10px $warning,
+      0px 0px 25px $warning,
+      0px 0px 25px $warning,
+      0px 0px 25px $warning,
+      0px 0px 25px $warning,
+      0px 0px 25px $warning,
+      0px 0px 25px $warning,
+      0px 0px 50px $warning,
+      0px 0px 50px $warning,
+      0px 0px 50px $warning,
+      0px 0px 150px $warning,
+      0px 10px 100px $warning,
+      0px 10px 100px $warning,
+      0px 10px 100px $warning,
+      0px 10px 100px $warning,
+      0px -10px 100px $warning,
+      0px -10px 100px $warning;
+  }
+}

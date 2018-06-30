@@ -1,0 +1,38 @@
+#courses{
+	.overlay {
+	  position: absolute;
+	  top: 0;
+	  bottom: 0;
+margin:20px;
+	  height: 400px;
+	  width: 300px;
+	  opacity: 0;
+
+		border:10px solid $primary;
+
+	}
+
+	.wrapper:hover .overlay {
+	  opacity: 1;
+	}
+	.wrapper:hover img {
+	  opacity: .5;
+	}
+
+	.text {
+
+		font-weight: 600;
+	  font-size: 30px;
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	  -ms-transform: translate(-50%, -50%);
+	  text-align: center;
+	}
+img{
+	height: 400px;
+	width:300px;
+
+}
+}
